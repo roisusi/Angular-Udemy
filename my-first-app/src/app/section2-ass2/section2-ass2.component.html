@@ -1,0 +1,21 @@
+<body>
+  <label>UserName</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Enter your username"
+    [(ngModel)]="userName"
+  />
+  <br />
+
+  <p>{{ userNameFinal }}</p>
+
+  <button
+    class="btn btn-primary"
+    [disabled]="checkIfEmpty()"
+    (click)="onUserNameType()"
+  >
+    OK
+  </button>
+  <button class="btn btn-primary" (click)="onReset()">Reset</button>
+</body>

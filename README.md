@@ -22,4 +22,18 @@ Angular - The Complete Guide (2022 Edition) with Maximilian Schwarzmüller
 })<br>
 4. index.html (that replace all the time)
 </li>
+<li>What is @Component and its attributes that can use external/internal URL or inline cose </li>
+<li>how to generate Components by cli</li>
+<li>Working with styles</li>
+<li>How to work instead of < element > as attribute or class</li>
+<li>String Interpolation {{X}}</li>
+<li>Property Binding [property:"like disable on button"]= "bool instance (like AllowServer)"</li>
+<li>Event Binding with (event HTML (onClick is click))="name of the method" </li>
+<li>$event is the passed event object each time the using doing somthing and capturing the event data</li>
+<li>Two way binding using [(ngModel)] with FormsModule from '@angular/forms';</li>
+</ul>
+
+<h3> Known ng engine </h3>
+<ul>
+<li>ngModel from FormsModule for two way binding</li>
 </ul>
