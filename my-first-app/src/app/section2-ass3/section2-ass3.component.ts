@@ -7,23 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Section2Ass3Component implements OnInit {
   display = false;
-  log = [1];
-  num: number = 1;
+  log: number[] = [];
+  num: number = 0;
 
   constructor() {}
 
   toggleDisplay() {
-    // this.display = !this.display;
-    this.display = true;
+    this.display = !this.display;
     this.num += 1;
     this.log.push(this.num);
-  }
-
-  getColor() {
-    if (this.num >= 5) {
-      return 'blue';
-    }
-    return 'white';
   }
 
   ngOnInit(): void {}

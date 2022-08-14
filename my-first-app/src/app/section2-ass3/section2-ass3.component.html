@@ -1,7 +1,11 @@
 <body>
   <button class="btn btn-primary" (click)="toggleDisplay()">Display</button>
   <p *ngIf="display">Secrect Password = 'tuna'</p>
-  <p *ngFor="let nums of log" [ngStyle]="{ 'background-color': getColor() }">
+  <div
+    *ngFor="let nums of log; let i = index"
+    [ngClass]="{ fonts: i >= 4 }"
+    [ngStyle]="{ 'background-color': i >= 4 ? 'blue' : 'white' }"
+  >
     {{ nums }}
-  </p>
+  </div>
 </body>
