@@ -30,10 +30,27 @@ Angular - The Complete Guide (2022 Edition) with Maximilian Schwarzmüller
 <li>Property Binding [property:"like disable on button"]= "bool instance (like AllowServer)"</li>
 <li>Event Binding with (event HTML (onClick is click))="name of the method" </li>
 <li>$event is the passed event object each time the using doing somthing and capturing the event data</li>
-<li>Two way binding using [(ngModel)] with FormsModule from '@angular/forms';</li>
+<li>Two way binding using [(ngModel)] with FormsModule from '@angular/forms'</li>
+<li>Directives - like @Components</li>
+<li>Structure Directives - *ngIf (* means we change the structure of the DOM) add or remove elements</li>
+<li>Introdution to Local Reference # with < ng-template ></li>
+<li>Attribute Directives - only chage the element placed but not add or remove elements</li>
 </ul>
 
 <h3> Known ng engine </h3>
 <ul>
 <li>ngModel from FormsModule for two way binding</li>
+</ul>
+
+<h3> Known ng Structure Directive </h3>
+<ul>
+<li>*ngIf - for conditionals elements</li>
+<li>*ngFor - for loops of elements
+</ul>
+
+<h3> Known ng Attribute Directive </h3>
+<ul>
+<li>ngStyle - come with data binding [ngStyle]</li>
+<li>ngClass - come with data binding [ngStyle] to add a class to the element</li>
+
 </ul>

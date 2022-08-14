@@ -9,7 +9,7 @@
 
   <!-- Two way bindings -->
   <input type="text" class="form-control" [(ngModel)]="serverName" />
-  <p>{{ serverName }}</p>
+  <!-- <p>{{ serverName }}</p> -->
   <button
     class="btn btn-primary"
     [disabled]="!allowNewServer"
@@ -17,7 +17,10 @@
   >
     Add Server
   </button>
-  <p>{{ serverCreationStatus }}</p>
-  <app-server></app-server>
-  <app-server></app-server>
+  <!-- <p>{{ serverCreationStatus }}</p> -->
+  <p *ngIf="serverCreated; else noServer">
+    Server was created successfully, name is {{ serverName }}
+  </p>
+  <ng-template #noServer> <p>No Server was created</p> </ng-template>
+  <app-server *ngFor="let server of servers"></app-server>
 </body>

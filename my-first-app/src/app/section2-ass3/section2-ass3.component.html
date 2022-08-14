@@ -1,0 +1,7 @@
+<body>
+  <button class="btn btn-primary" (click)="toggleDisplay()">Display</button>
+  <p *ngIf="display">Secrect Password = 'tuna'</p>
+  <p *ngFor="let nums of log" [ngStyle]="{ 'background-color': getColor() }">
+    {{ nums }}
+  </p>
+</body>
