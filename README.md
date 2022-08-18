@@ -8,6 +8,7 @@ Angular - The Complete Guide (2022 Edition) with Maximilian Schwarzmüller
   <li>Creating libary with: ng new my-first-app</li>
   <li>installing Bootstrap3 with: npm install --save bootstrap@3 </li>
   <li>configfure angular.json build->styles-> add new entry (for all angular project) node_modules/bootstrap/dist/css/bootstrap.min.css </li>
+  <li> ng g c to create Component and "--skip-tests"  without testing .spec file
 </ul>
 
 <h3>Section 2 - The Basics</h3>
@@ -39,7 +40,8 @@ Angular - The Complete Guide (2022 Edition) with Maximilian Schwarzmüller
 
 <h3>Section 3 - Course Project The Basics</h3>
 <ul>
-  <li></li>
+  <li>Building the project with ng gc *name* --skip-tests to skip spec file</li>
+  <li>Create new Class model typescript file</li>
 </ul>
 
 <h3> Known ng engine </h3>
