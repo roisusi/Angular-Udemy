@@ -1,6 +1,6 @@
 # Angular-Udemy
 
-Angular - The Complete Guide (2022 Edition) with Maximilian Schwarzmüller
+Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 1 - Getting Started</h3>
 <ul>
