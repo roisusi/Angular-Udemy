@@ -55,6 +55,19 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>alias - @Output("aliasName") same as input </li>
   <li>ViewEncapsulation - encapsulation of the css <a href="https://stackoverflow.com/questions/35651993/diff-between-viewencapsulation-native-viewencapsulation-none-and-viewencapsulat"> good explanation </a></li>
   <li>Local Reference - and html adding tag like id #< name > and it will be the reference of THAT HTML tag and knew only in the HTML we can put something in TS code as a passing arguments and getting all the html element and all its properties</li>
+  <li>@ViewChild('') - Another replacment for twoway binding through passing local reference #serverContentInput with @ViewChild('')</li>
+  <li>< ngcontent > </ ngcontent> this is marking that Angular wont reject contents between < app-X> </ app-X></li>
+    <ul>LifeCycle : 
+      <li>ngOnChange = called a bound input property changes</li>
+      <li>ngOnInit = called once the component is initialized</li>
+      <li>ngDoCheck = called during every change detection run</li>
+      <li>ngAfterContentInit = called after < ng-content> has been projected into view</li>
+      <li>ngAfterContentChecked = called everytime the projected content ha been cheecked</li>
+      <li>ngAfterViewInit = called after the componet's view (and child views) has been initialized</li>
+      <li>ngAfterViewCheched = called everytime the view (and child views) has been checked</li>
+      <li>ngOnDestory = called once the component is about to be destroy</li>
+    </ul>
+    <li>@ContentChild('') - access the content of the elemets that < ngcontent > produces, @ViewChild('') can't access it</li>
 </ul>
 
 <h3> Known ng engine </h3>
