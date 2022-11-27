@@ -7,4 +7,12 @@
       <button (click)="onStopTime()" class="btn btn-danger">Pause Game</button>
     </div>
   </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-even *ngFor="let even of evenNumbers" [evenNumber]="even"></app-even>
+    </div>
+    <div class="col-xs-12">
+      <app-odd *ngFor="let odd of oddNumbers" [oddNumber]="odd"></app-odd>
+    </div>
+  </div>
 </div>

@@ -9,6 +9,8 @@ export class GameControlComponent implements OnInit {
   globalInterval: NodeJS.Timer;
   @Output() intervallFired = new EventEmitter<number>();
   lastNumber: number = 0;
+  evenNumbers: number[] = [];
+  oddNumbers: number[] = [];
 
   constructor() {}
 
@@ -17,6 +19,11 @@ export class GameControlComponent implements OnInit {
   onStartTime() {
     this.globalInterval = setInterval(() => {
       this.intervallFired.emit(this.lastNumber + 1);
+      if (this.lastNumber % 2 === 0) {
+        this.evenNumbers.push(this.lastNumber);
+      } else {
+        this.oddNumbers.push(this.lastNumber);
+      }
       this.lastNumber++;
     }, 1000);
   }
