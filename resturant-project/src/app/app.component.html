@@ -1,8 +1,11 @@
-<app-header></app-header>
+<app-header (onMenuToggle)="toggleDisplay($event)"></app-header>
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
-      <app-recipes></app-recipes><app-shoping-list></app-shoping-list>
+      <app-recipes *ngIf="menuSelected === 'recepies'"></app-recipes>
+      <app-shoping-list
+        *ngIf="menuSelected === 'shoping-list'"
+      ></app-shoping-list>
     </div>
   </div>
 </div>
