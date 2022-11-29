@@ -70,6 +70,12 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
     <li>@ContentChild('') - access the content of the elemets that < ngcontent > produces, @ViewChild('') can't access it</li>
 </ul>
 
+<h3>Section 4-6 is Handson practices</h3>
+
+<h3>Section 7 - Derectives Deep Dive</h3>
+<ul>
+</ul>
+
 <h3> Known ng engine </h3>
 <ul>
   <li>ngModel from FormsModule for two way binding</li>
