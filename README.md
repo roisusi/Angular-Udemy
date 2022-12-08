@@ -74,6 +74,8 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 7 - Derectives Deep Dive</h3>
 <ul>
+<li>Create a Directive with ElementRef and Renderer2</li>
+<li>@HostListener for 
 </ul>
 
 <h3> Known ng engine </h3>
