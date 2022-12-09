@@ -74,8 +74,9 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 7 - Derectives Deep Dive</h3>
 <ul>
-<li>Create a Directive with ElementRef and Renderer2</li>
-<li>@HostListener for 
+  <li>Create a Directive with ElementRef and Renderer2</li>
+  <li>@HostListener for styleing</li>
+  <li>@HostBinding for styleing</li>
 </ul>
 
 <h3> Known ng engine </h3>
@@ -89,7 +90,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>*ngFor - for loops of elements
 </ul>
 
-<h3> Known ng Attribute Directive </h3>
+<h3> Known ng Attribute Directive - using it with Property Binding</h3>
 <ul>
   <li>ngStyle - come with data binding [ngStyle]</li>
   <li>ngClass - come with data binding [ngStyle] to add a class to the element</li>
