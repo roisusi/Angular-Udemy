@@ -77,6 +77,22 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Create a Directive with ElementRef and Renderer2</li>
   <li>@HostListener for styleing</li>
   <li>@HostBinding for styleing</li>
+  <li>Building new Directive </li>
+  <li>ngSwitch</li>
+</ul>
+
+<h3>Section 9 - Using Services and Dependency Injection</h3>
+<ul>
+  <li>Create a Servives using ng g s</li>
+  <li>Create a Dependency Injection using private of that service</li>
+  <li><ol>Heirarchy of injection</li>
+    <li>AppModule - all the application knows the Injection even with Services</li>
+    <li>AppComponets - all the Components (from App and down) knows the Injection but without Services</li>
+    <li>SingleComponent - only him and his children know the Injection, but his parent component can override the Injection</li>
+  </ol>
+  <li>@Injectable() - to inject into that services from another services</li>
+  <li>@Injectable({providedIn: 'root'}) - is the same as insert it on providers[] in the appModule</li>
+  <li>@Injectable({providedIn: 'root'}) - makes the services able to inject and makes it high in the hierarchy</li>
 </ul>
 
 <h3> Known ng engine </h3>
@@ -87,11 +103,14 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 <h3> Known ng Structure Directive </h3>
 <ul>
   <li>*ngIf - for conditionals elements</li>
-  <li>*ngFor - for loops of elements
+  <li>*ngFor - for loops of elements</li>
+  <li>*ngSwitchCase - for cases goes with [ngSwtich]</li>
+  <li>*ngSwitchDefault - for default cases goes with [ngSwitch]</li>
 </ul>
 
 <h3> Known ng Attribute Directive - using it with Property Binding</h3>
 <ul>
   <li>ngStyle - come with data binding [ngStyle]</li>
   <li>ngClass - come with data binding [ngStyle] to add a class to the element</li>
+  <li>ngSwitch - comes with data binding [ngSwitch] to have a switch case</li>
 </ul>
