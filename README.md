@@ -93,6 +93,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>@Injectable() - to inject into that services from another services</li>
   <li>@Injectable({providedIn: 'root'}) - is the same as insert it on providers[] in the appModule</li>
   <li>@Injectable({providedIn: 'root'}) - makes the services able to inject and makes it high in the hierarchy</li>
+  <li>Service to Service Injectable</li>
 </ul>
 
 <h3> Known ng engine </h3>
