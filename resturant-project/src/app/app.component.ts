@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  menuSelected: string = '';
+  menuSelected: string = 'recepies';
   constructor() {}
   toggleDisplay(selected: string) {
     this.menuSelected = selected;

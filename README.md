@@ -8,7 +8,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Creating libary with: ng new my-first-app</li>
   <li>installing Bootstrap3 with: npm install --save bootstrap@3 </li>
   <li>configfure angular.json build->styles-> add new entry (for all angular project) node_modules/bootstrap/dist/css/bootstrap.min.css </li>
-  <li> ng g c to create Component and "--skip-tests"  without testing .spec file
+  <li> ng g c to create Component and "--skip-tests"  without testing .spec file</li>
 </ul>
 
 <h3>Section 2 - The Basics</h3>
@@ -94,6 +94,19 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>@Injectable({providedIn: 'root'}) - is the same as insert it on providers[] in the appModule</li>
   <li>@Injectable({providedIn: 'root'}) - makes the services able to inject and makes it high in the hierarchy</li>
   <li>Service to Service Injectable</li>
+</ul>
+
+<h3>Section 10 - Routing</h3>
+<ul>
+  <li>Using Routes and RouterModule from @angular/router</li>
+  <li>Using RouterModule.forRoot(appRoutes) to load routes like : const appRoutes: Routes = [
+  { path: '', component: HomeComponent }]
+  <li>Using ActivatedRoute parameters like : { path: 'users/:id/:name', component: UserComponent } and id: this.route.snapshot.params['id'] </li>
+  <li>Relative paths vs absolute paths</li>
+  <li>Using navigate router.navigate(['/servers'])</li>
+  <li>Render page using subscribe event when the url changes</li>
+  <li>Dynamic listem to query and fragments using ActivatedRoute<li>
+  <li>Nested Routes</li>
 </ul>
 
 <h3> Known ng engine </h3>
