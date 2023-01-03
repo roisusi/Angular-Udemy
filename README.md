@@ -106,7 +106,10 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Using navigate router.navigate(['/servers'])</li>
   <li>Render page using subscribe event when the url changes</li>
   <li>Dynamic listem to query and fragments using ActivatedRoute<li>
-  <li>Nested Routes</li>
+  <li>Nested Routes with childrens routes</li>
+  <li>Using relativeTo</li>
+  <li>Working with queryParamsHandling</li>
+  <li>Using redirectTo instad of component</li>
 </ul>
 
 <h3> Known ng engine </h3>
