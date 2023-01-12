@@ -110,6 +110,10 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Using relativeTo</li>
   <li>Working with queryParamsHandling</li>
   <li>Using redirectTo instad of component</li>
+  <li>Guard with canActivate and Deactivate</li>
+  <li>Guard Childs</li>
+  <li>Route static and dynamic using resolver</li>
+  <li>using hash # for old routing</li>
 </ul>
 
 <h3> Known ng engine </h3>
