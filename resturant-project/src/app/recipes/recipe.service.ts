@@ -18,6 +18,12 @@ export class RecipeService {
       'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2F32df9b5cbadfd413b9f319ab314dd2cc%2F1653526004image.jpg&w=595&h=398&c=sc&poi=face&q=60',
       [new Ingredients('Meat', 10), new Ingredients('Sand', 4)]
     ),
+    new Recipe(
+      'Lock2',
+      'Mocka',
+      'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fpublic-assets.meredithcorp.io%2F32df9b5cbadfd413b9f319ab314dd2cc%2F1653526004image.jpg&w=595&h=398&c=sc&poi=face&q=60',
+      [new Ingredients('Meat', 10), new Ingredients('Sand', 4)]
+    ),
   ];
 
   getRecipes() {
@@ -26,5 +32,9 @@ export class RecipeService {
 
   addIngredientsToShoppingList(ingredient: Ingredients[]) {
     this.shoppingListService.addIngredients(ingredient);
+  }
+
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 }
