@@ -105,15 +105,32 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Relative paths vs absolute paths</li>
   <li>Using navigate router.navigate(['/servers'])</li>
   <li>Render page using subscribe event when the url changes</li>
-  <li>Dynamic listem to query and fragments using ActivatedRoute<li>
-  <li>Nested Routes with childrens routes</li>
+  <li>Dynamic listen to query and fragments using ActivatedRoute<li>
+  <li>Nested Routes with children routes</li>
   <li>Using relativeTo</li>
   <li>Working with queryParamsHandling</li>
-  <li>Using redirectTo instad of component</li>
+  <li>Using redirectTo instead of component</li>
   <li>Guard with canActivate and Deactivate</li>
-  <li>Guard Childs</li>
+  <li>Guard Children</li>
   <li>Route static and dynamic using resolver</li>
   <li>using hash # for old routing</li>
+</ul>
+<h3>Section 13 - Observable</h3>
+<ul>
+    <li>using RxJS lib</li>
+    <li>Angular doesn't unsubscribe events that subscribed using Observers so we need to configure <br> 
+        Subscription variable and on ngOnDestroy to unsubscribe it</li>
+    <li>Using create or new Observable</li>
+    <li>Using Complete or Error</li>
+    <li>Error - Cancel the Observer but never complete it, it never reaches the complete callback</li>
+    <li>Complete - complete the observable and unsubscribe it</li>
+    <li>Using operators like: map, filter</li>
+    <li>Using Subscribe</li>
+</ul>
+
+<h3>Section 15 - Forms</h3>
+<ul>
+    <li></li>
 </ul>
 
 <h3> Known ng engine </h3>
