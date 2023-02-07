@@ -130,7 +130,9 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 15 - Forms</h3>
 <ul>
-    <li></li>
+    <li>how to use NgForm and (ngSubmit)</li>
+    <li>how to use @ViewChild so we dont need to pass arg of NgForm</li>
+    <li>Validation</li>
 </ul>
 
 <h3> Known ng engine </h3>
