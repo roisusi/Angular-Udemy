@@ -1,0 +1,11 @@
+.container {
+  margin-top: 30px;
+}
+
+.ng-valid{
+  border-color: green;
+}
+
+.ng-invalid.ng-touched{
+  border-color: red;
+}

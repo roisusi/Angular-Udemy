@@ -34,15 +34,15 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>Two way binding using [(ngModel)] with FormsModule from '@angular/forms'</li>
   <li>Directives - like @Components</li>
   <li>Structure Directives - *ngIf (* means we change the structure of the DOM) add or remove elements</li>
-  <li>Introdution to Local Reference # with < ng-template ></li>
-  <li>Attribute Directives - only chage the element placed but not add or remove elements</li>
+  <li>Introduction to Local Reference # with < ng-template ></li>
+  <li>Attribute Directives - only change the element placed but not add or remove elements</li>
 </ul>
 
 <h3>Section 3 - Course Project The Basics</h3>
 <ul>
   <li>Building the project with ng gc *name* --skip-tests to skip spec file</li>
   <li>Create new Class model typescript file</li>
-  <li>@Input() - binding element - expose the element or variable to the "world", mean outside of the class so the parent class can recognize it Parnet->Child</il>
+  <li>@Input() - binding element - expose the element or variable to the "world", mean outside the class so the parent class can recognize it Parent->Child</li>
   <li>alias - @Input("aliasName") and the name of the element is now "aliasName" and the old element wont work</li>
   <li>@Output() : </li>
   <ul>
@@ -56,7 +56,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>ViewEncapsulation - encapsulation of the css <a href="https://stackoverflow.com/questions/35651993/diff-between-viewencapsulation-native-viewencapsulation-none-and-viewencapsulat"> good explanation </a></li>
   <li>Local Reference - and html adding tag like id #< name > and it will be the reference of THAT HTML tag and knew only in the HTML we can put something in TS code as a passing arguments and getting all the html element and all its properties</li>
   <li>@ViewChild('') - Another replacment for twoway binding through passing local reference #serverContentInput with @ViewChild('')</li>
-  <li>< ngcontent > </ ngcontent> this is marking that Angular wont reject contents between < app-X> </ app-X></li>
+  <li>< ngcontent > < / ngcontent> this is marking that Angular won't reject contents between < app-X> < / app-X></li>
     <ul>LifeCycle : 
       <li>ngOnChange = called a bound input property changes</li>
       <li>ngOnInit = called once the component is initialized</li>
@@ -85,11 +85,13 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 <ul>
   <li>Create a Servives using ng g s</li>
   <li>Create a Dependency Injection using private of that service</li>
-  <li><ol>Heirarchy of injection</li>
+  <li>
+    <ol>Heirarchy of injection
     <li>AppModule - all the application knows the Injection even with Services</li>
     <li>AppComponets - all the Components (from App and down) knows the Injection but without Services</li>
     <li>SingleComponent - only him and his children know the Injection, but his parent component can override the Injection</li>
-  </ol>
+    </ol>
+  </li>
   <li>@Injectable() - to inject into that services from another services</li>
   <li>@Injectable({providedIn: 'root'}) - is the same as insert it on providers[] in the appModule</li>
   <li>@Injectable({providedIn: 'root'}) - makes the services able to inject and makes it high in the hierarchy</li>
@@ -130,14 +132,25 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 15 - Forms</h3>
 <ul>
+    <h4>Template-Driven:</h4>
     <li>how to use NgForm and (ngSubmit)</li>
-    <li>how to use @ViewChild so we dont need to pass arg of NgForm</li>
+    <li>how to use @ViewChild, so we don't need to pass arg of NgForm</li>
     <li>Validation</li>
+    <li>Style with ng-touched ng-valid on the NgForm model</li>
+    <li>Using ngModelGroup></li>
+    <li>setting local reference to ngModel or ngModelGroup to get the JS information</li>
+    <li>set default data of NgForm setValue need to copy the exact value, this isn't the best approach</li>
+    <li>setValue - for the whole form, patchValue - for a part of the form</li>
+    <li>extra data and clean the form</li>
+    <h4>Reactive Forms:</h4>
+    <li>using FormControl, FormGroup, Validators from @angular/forms</li>
+    <li>Nested Form Control by making new FormGroups and wrap in on a div</li>
 </ul>
 
 <h3> Known ng engine </h3>
 <ul>
-  <li>ngModel from FormsModule for two way binding</li>
+  <li>ngModel from FormsModule for two-way binding and also for Forms</li>
+  <li>ngModelGroup to group Form</li>
 </ul>
 
 <h3> Known ng Structure Directive </h3>
