@@ -10,6 +10,6 @@ export class AppComponent {
   assForm = new FormGroup({
     "projectName": new FormControl(),
     "email": new FormControl(),
-    "projectStatuus": new FormControl(),
+    "projectStatus": new FormControl(),
     });
 }
