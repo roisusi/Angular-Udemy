@@ -144,7 +144,11 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
     <li>extra data and clean the form</li>
     <h4>Reactive Forms:</h4>
     <li>using FormControl, FormGroup, Validators from @angular/forms</li>
-    <li>Nested Form Control by making new FormGroups and wrap in on a div</li>
+    <li>Nested(grouping) Form Control by making new FormGroups and wrap in on a div</li>
+    <li>Arrays of Controls</li>
+    <li>Custom Validator - sync and async with promise</li>
+    <li>State and Value Changes a function in a form group when the Tag changes</li>
+    <li>Setting an patching</li>
 </ul>
 
 <h3> Known ng engine </h3>
