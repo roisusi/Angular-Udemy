@@ -5,9 +5,9 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 <h3>Section 1 - Getting Started</h3>
 <ul>
   <li>Downloading Node JS and Angular with: npm install -g @angular@cli</li>
-  <li>Creating libary with: ng new my-first-app</li>
+  <li>Creating library with: ng new my-first-app</li>
   <li>installing Bootstrap3 with: npm install --save bootstrap@3 </li>
-  <li>configfure angular.json build->styles-> add new entry (for all angular project) node_modules/bootstrap/dist/css/bootstrap.min.css </li>
+  <li>configure angular.json build->styles-> add new entry (for all angular project) node_modules/bootstrap/dist/css/bootstrap.min.css </li>
   <li> ng g c to create Component and "--skip-tests"  without testing .spec file</li>
 </ul>
 
@@ -30,7 +30,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
   <li>String Interpolation {{X}}</li>
   <li>Property Binding [property:"like disable on button"]= "bool instance (like AllowServer)"</li>
   <li>Event Binding with (event HTML (onClick is click))="name of the method" </li>
-  <li>$event is the passed event object each time the using doing somthing and capturing the event data</li>
+  <li>$event is the passed event object each time the using doing something and capturing the event data</li>
   <li>Two way binding using [(ngModel)] with FormsModule from '@angular/forms'</li>
   <li>Directives - like @Components</li>
   <li>Structure Directives - *ngIf (* means we change the structure of the DOM) add or remove elements</li>
@@ -50,45 +50,45 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
     <li>Stage 1 - Parent : create functions like onServerAdded(serverData:{object})</li>
     <li>Stage 2 - Parent : create <b>event</b> name in () like "(serverCreated(this is the event name))="onServerAdded($event)" </li>
     <li>Stage 3 - Child : @Output() the <b>event</b> name as Parent and new EventEmitter same as the Parent function arguments like: @Output() serverCreated new EventEmitter< types > from @angular/core</li>
-    <li>Stage 4 - Child : create function (onAddServer exp) that the Parent will listen and emit it with the name you gave for the @Output() this.serverCreaterd.emit({this.newServerName...})</li>
+    <li>Stage 4 - Child : create function (onAddServer exp) that the Parent will listen and emit it with the name you gave for the @Output() this.serverCreated.emit({this.newServerName...})</li>
   </ul>
   <li>alias - @Output("aliasName") same as input </li>
   <li>ViewEncapsulation - encapsulation of the css <a href="https://stackoverflow.com/questions/35651993/diff-between-viewencapsulation-native-viewencapsulation-none-and-viewencapsulat"> good explanation </a></li>
   <li>Local Reference - and html adding tag like id #< name > and it will be the reference of THAT HTML tag and knew only in the HTML we can put something in TS code as a passing arguments and getting all the html element and all its properties</li>
-  <li>@ViewChild('') - Another replacment for twoway binding through passing local reference #serverContentInput with @ViewChild('')</li>
-  <li>< ngcontent > < / ngcontent> this is marking that Angular won't reject contents between < app-X> < / app-X></li>
+  <li>@ViewChild('') - Another replacement for two-way binding through passing local reference #serverContentInput with @ViewChild('')</li>
+  <li>< ng-content > < / ng-content> this is marking that Angular won't reject contents between < app-X> < / app-X></li>
     <ul>LifeCycle : 
       <li>ngOnChange = called a bound input property changes</li>
       <li>ngOnInit = called once the component is initialized</li>
       <li>ngDoCheck = called during every change detection run</li>
       <li>ngAfterContentInit = called after < ng-content> has been projected into view</li>
-      <li>ngAfterContentChecked = called everytime the projected content ha been cheecked</li>
-      <li>ngAfterViewInit = called after the componet's view (and child views) has been initialized</li>
-      <li>ngAfterViewCheched = called everytime the view (and child views) has been checked</li>
-      <li>ngOnDestory = called once the component is about to be destroy</li>
+      <li>ngAfterContentChecked = called everytime the projected content ha been checked</li>
+      <li>ngAfterViewInit = called after the component's view (and child views) has been initialized</li>
+      <li>ngAfterViewChanged = called everytime the view (and child views) has been checked</li>
+      <li>ngOnDestroy = called once the component is about to be destroy</li>
     </ul>
-    <li>@ContentChild('') - access the content of the elemets that < ngcontent > produces, @ViewChild('') can't access it</li>
+    <li>@ContentChild('') - access the content of the elements that < ng-content > produces, @ViewChild('') can't access it</li>
 </ul>
 
-<h3>Section 4-6 is Handson practices</h3>
+<h3>Section 4-6 is Hands-on practices</h3>
 
-<h3>Section 7 - Derectives Deep Dive</h3>
+<h3>Section 7 - Directives Deep Dive</h3>
 <ul>
   <li>Create a Directive with ElementRef and Renderer2</li>
-  <li>@HostListener for styleing</li>
-  <li>@HostBinding for styleing</li>
+  <li>@HostListener for styling</li>
+  <li>@HostBinding for styling</li>
   <li>Building new Directive </li>
   <li>ngSwitch</li>
 </ul>
 
 <h3>Section 9 - Using Services and Dependency Injection</h3>
 <ul>
-  <li>Create a Servives using ng g s</li>
+  <li>Create a Services using ng g s</li>
   <li>Create a Dependency Injection using private of that service</li>
   <li>
-    <ol>Heirarchy of injection
+    <ol>Hierarchy of injection
     <li>AppModule - all the application knows the Injection even with Services</li>
-    <li>AppComponets - all the Components (from App and down) knows the Injection but without Services</li>
+    <li>AppComponents - all the Components (from App and down) knows the Injection but without Services</li>
     <li>SingleComponent - only him and his children know the Injection, but his parent component can override the Injection</li>
     </ol>
   </li>
@@ -120,7 +120,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 <h3>Section 13 - Observable</h3>
 <ul>
     <li>using RxJS lib</li>
-    <li>Angular doesn't unsubscribe events that subscribed using Observers so we need to configure <br> 
+    <li>Angular doesn't unsubscribe events that subscribed using Observers, so we need to configure <br> 
         Subscription variable and on ngOnDestroy to unsubscribe it</li>
     <li>Using create or new Observable</li>
     <li>Using Complete or Error</li>
@@ -151,6 +151,11 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
     <li>Setting an patching</li>
 </ul>
 
+<h3>Section 17 - Pipes</h3>
+<ul>
+    <li></li>
+</ul>
+
 <h3> Known ng engine </h3>
 <ul>
   <li>ngModel from FormsModule for two-way binding and also for Forms</li>
@@ -161,7 +166,7 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 <ul>
   <li>*ngIf - for conditionals elements</li>
   <li>*ngFor - for loops of elements</li>
-  <li>*ngSwitchCase - for cases goes with [ngSwtich]</li>
+  <li>*ngSwitchCase - for cases goes with [ngSwitch]</li>
   <li>*ngSwitchDefault - for default cases goes with [ngSwitch]</li>
 </ul>
 

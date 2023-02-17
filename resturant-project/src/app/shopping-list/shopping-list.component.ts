@@ -5,10 +5,10 @@ import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-shoping-list',
-  templateUrl: './shoping-list.component.html',
-  styleUrls: ['./shoping-list.component.css'],
+  templateUrl: './shopping-list.component.html',
+  styleUrls: ['./shopping-list.component.css'],
 })
-export class ShopingListComponent implements OnInit, OnDestroy {
+export class ShoppingListComponent implements OnInit, OnDestroy {
   ingredients: Ingredients[];
   private subscription: Subscription;
 
@@ -23,5 +23,9 @@ export class ShopingListComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.subscription.unsubscribe();
+  }
+
+  onEditItem(val: number) {
+    this.shoppingListService.startedEditing.next(val);
   }
 }
