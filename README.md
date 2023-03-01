@@ -153,7 +153,15 @@ Angular - The Complete Guide (2022 Edition) by Maximilian Schwarzmüller
 
 <h3>Section 17 - Pipes</h3>
 <ul>
-    <li></li>
+    <li>mark with |</li>
+    <li>more here https://angular.io/api </li>
+    <li>custom pipes</li>
+    <li>Pure and imPure</li>
+</ul>
+
+<h3>Section 18 - HTTP </h3>
+<ul>
+    
 </ul>
 
 <h3> Known ng engine </h3>
